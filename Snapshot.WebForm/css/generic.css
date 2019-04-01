@@ -1,0 +1,224 @@
+﻿body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f1f1f1;
+}
+
+    body * {
+        box-sizing: border-box;
+    }
+
+    body ul {
+        list-style: none;
+    }
+
+header {
+    width: 53px;
+    height: 100%;
+    background-color: #0d1217;
+    position: fixed;
+    z-index: 10;
+}
+
+    header > nav ul {
+        padding: 16px 0 0 16px;
+    }
+
+        header > nav ul li {
+            margin-bottom: 16px;
+        }
+
+            header > nav ul li a {
+                color: #c8c7c7;
+                text-decoration: none;
+            }
+
+                header > nav ul li a:hover {
+                    color: white;
+                }
+
+                header > nav ul li a.active {
+                    color: #19B5FE;
+                }
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 57px;
+    background-color: #e6e6e6;
+    padding: 20px 40px 0 0;
+}
+
+    .banner > span {
+        position: relative;
+        font-size: 12px;
+        float: right;
+    }
+
+.yazilar {
+    width: 96%;
+    min-height: 250px;
+    position: relative;
+    left: 4%;
+    padding: 30px 40px 0 40px;
+}
+
+    .yazilar > h1 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .yazilar p {
+        font-size: 11px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .yazilar h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+.resim {
+    width: 96%;
+    min-height: 200px;
+    position: relative;
+    left: 4%;
+    padding: 5px 40px 0 40px;
+}
+
+    .resim > div {
+        position: relative;
+        width: 48%;
+        height: 200px;
+    }
+
+        .resim > div:first-child {
+            width: 48%;
+            float: left;
+        }
+
+        .resim > div:last-child {
+            width: 48%;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .resim > div span {
+            float: left;
+            position: relative;
+            border: solid 1px #a3a3a3;
+            width: 150.13px;
+            height: 150.13px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+            .resim > div span > img {
+                width: 130px;
+                height: 130px;
+            }
+
+        .resim > div h3 {
+            display: block;
+            position: relative;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .resim > div p {
+            font-size: 11px;
+            line-height: 20px;
+        }
+.formum {
+    display:block;
+    position: relative;
+    width: 96%;
+    left: 4%;
+    min-height: 420px;
+}
+
+    .formum > div {
+        width: 50%;
+        min-height: 420px;
+        float: left;
+    }
+
+.hakkimda {
+    background-color: #e6e6e6;
+    position: relative;
+    padding: 40px 30px 0 40px;
+}
+
+    .hakkimda h3, .mesaj h3 {
+        font-size: 17px;
+    }
+
+    .hakkimda p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .hakkimda ul {
+        padding: 5px 0 0 0;
+    }
+
+        .hakkimda ul > li {
+            position: relative;
+            float: left;
+            margin-right: 20px;
+        }
+
+            .hakkimda ul > li a {
+                font-size: 20px;
+                color: #19B5FE;
+            }
+
+                .hakkimda ul > li a:hover {
+                    font-size: 20px;
+                    color: #18a2e2;
+                }
+
+.mesaj {
+    background-color: #ececec;
+    padding: 40px 15px 0 15px;
+}
+
+    .mesaj label {
+        font-size: 13px;
+    }
+
+    .mesaj input[type=text], .mesaj input[type=email] {
+        height: 35px;
+    }
+
+    .mesaj textarea {
+        height: 130px;
+    }
+
+    .mesaj a {
+        position: relative;
+        background-color: #19B5FE;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+        .mesaj a:hover {
+            background-color: #0f80b4;
+        }
+
+footer {
+    position: relative;
+    width: 96%;
+    left: 4%;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    color: #bfbfbf;
+}
+
+    footer span {
+        font-size: 10px;
+    }

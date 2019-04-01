@@ -1,0 +1,296 @@
+﻿body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+    body * {
+        box-sizing: border-box;
+    }
+
+    body ul {
+        list-style: none;
+    }
+
+header {
+    width: 53px;
+    height: 100%;
+    background-color: #0d1217;
+    position: fixed;
+    z-index: 10;
+}
+
+    header > nav ul {
+        padding: 16px 0 0 16px;
+    }
+
+        header > nav ul li {
+            margin-bottom: 16px;
+        }
+
+            header > nav ul li a {
+                color: #c8c7c7;
+                text-decoration: none;
+            }
+
+                header > nav ul li a:hover {
+                    color: white;
+                }
+
+                header > nav ul li a.active {
+                    color: #19B5FE;
+                }
+
+.banner {
+    width: 96%;
+    height: 370px;
+    position: relative;
+    left: 3.8%;
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: #FFF;
+    z-index: 0;
+    padding: 85px 50px 0 0;
+    -webkit-animation: bg-pan-tr 8s both;
+    animation: bg-pan-tr 8s both;
+}
+
+    .banner * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .banner div { /*gölgelik vermek için*/
+        width: 100%;
+        height: 400px;
+        background-color: #000;
+        opacity: 0.7;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .banner h1 {
+        padding-bottom: 15px;
+    }
+
+    .banner > p {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+        .banner > p a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+section {
+    width: 100%;
+    height: 600px;
+    background-color: #f7f7f7;
+    position: relative;
+    left: 0;
+    text-align: center;
+    padding-top: 35px;
+}
+
+    section h2 {
+        font-size: 22px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    section > div {
+        width: 100%;
+        height: 450px;
+        padding: 0 0 4% 9%;
+    }
+
+.dortlu {
+    height: 50%;
+}
+
+    .dortlu > img {
+        width: 24.5%;
+        position: relative;
+        float: left;
+        height: 100%;
+        z-index: 0;
+        border-radius: 4px;
+        transition: all linear 300ms;
+    }
+
+        .dortlu > img:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2);
+            position: relative;
+            z-index: 2;
+        }
+
+#fula {
+    transition: all linear 300ms;
+    background-color: #19B5FE;
+}
+
+    #fula:hover {
+        background-color: #0f80b4;
+    }
+
+.formum {
+    position: relative;
+    width: 96%;
+    left: 4%;
+    min-height: 420px;
+}
+
+    .formum > div {
+        width: 50%;
+        min-height: 420px;
+        float: left;
+    }
+
+.hakkimda {
+    background-color: #e6e6e6;
+    position: relative;
+    padding: 40px 30px 0 40px;
+}
+
+    .hakkimda h3, .mesaj h3 {
+        font-size: 17px;
+    }
+
+    .hakkimda p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .hakkimda ul {
+        padding: 5px 0 0 0;
+    }
+
+        .hakkimda ul > li {
+            position: relative;
+            float: left;
+            margin-right: 20px;
+        }
+
+            .hakkimda ul > li a {
+                font-size: 20px;
+                color: #19B5FE;
+            }
+
+                .hakkimda ul > li a:hover {
+                    font-size: 20px;
+                    color: #18a2e2;
+                }
+
+.mesaj {
+    background-color: #ececec;
+    padding: 40px 15px 0 15px;
+}
+
+    .mesaj label {
+        font-size: 13px;
+    }
+
+    .mesaj input[type=text], .mesaj input[type=email] {
+        height: 35px;
+    }
+
+    .mesaj textarea {
+        height: 130px;
+    }
+
+    .mesaj a {
+        position: relative;
+        background-color: #19B5FE;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+        .mesaj a:hover {
+            background-color: #0f80b4;
+        }
+
+footer {
+    position: relative;
+    width: 96%;
+    left: 4%;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    color: #bfbfbf;
+}
+
+    footer span {
+        font-size: 10px;
+    }
+
+.animasyon {
+    -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*yazı animasyonu*/
+@-webkit-keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+        transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+        transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+/*arkaplan animasyonu*/
+@-webkit-keyframes bg-pan-tr {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes bg-pan-tr {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
